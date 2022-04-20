@@ -25,5 +25,13 @@ btn.addEventListener("click", () => {
       divquote.appendChild(divbtn);
       divbtn.appendChild(btnup);
       divbtn.appendChild(btndown);
+
+      btnup.addEventListener("click", () => {
+        console.log("up");
+      });
+
+      btndown.addEventListener("click", () => {
+        console.log("down");
+      });
     });
 });
