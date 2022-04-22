@@ -2,16 +2,16 @@ function client() {
   $.get("https://api.kanye.rest/", (data) => {
     console.log(data);
     $(".quotes").append("<div></div>");
-    $(".quotes div").last().addClass("block");
+    $(".quotes div").last().addClass("block text-center");
     $(".block").last().append("<p></p>");
     $("p")
       .last()
       .text(function () {
         return data.quote;
       });
-    $(".block").last().append('<div class="btn-div-flex"></div');
-    $(".btn-div-flex").last().append('<button class="btn up"></button');
-    $(".btn-div-flex").last().append('<button class="btn down"></button');
+    $(".block").last().append('<div class="btn-div d-flex flex-column"></div');
+    $(".btn-div").last().append('<button class="btn up"></button');
+    $(".btn-div").last().append('<button class="btn down"></button');
     $(".up")
       .last()
       .text(function () {
